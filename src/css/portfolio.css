@@ -1,0 +1,218 @@
+.portafolio{
+    background-color: #FFF7E9;
+    margin: 0;
+    padding: 0;
+}
+.body-portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 10px;
+    padding-right: 10px;
+    border-bottom: solid;
+    border-color: #FF731D;
+}
+.switch-container{
+    width: 35px;
+    height: 12px;
+    background-color: #5F9DF7;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.on{
+    justify-content: flex-start;
+}
+.off{
+    justify-content: flex-end;
+}
+
+.switch-handle{
+    width: 15px;
+    height: 15px;
+    background-color: #1746A2;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+.welcome{
+    display: flex;
+    flex-direction: column; 
+    height: fit-content ;
+
+}
+.texto{
+    border-left: solid #1746A2;
+    border-top: solid #1746A2;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 3px;
+    height: fit-content;
+}
+.img-profile{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.about{
+    border-right: solid #1746A2;
+    border-bottom: solid #1746A2;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.sec-projects{
+    border-bottom: solid;
+    border-color: #FF731D;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.intro-text{
+    border-left: solid #1746A2;
+    border-top: solid #1746A2;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 3px;
+    height: fit-content; 
+}
+.proy{
+    display: flex;
+    flex-direction:column-reverse;
+    row-gap: 5px;
+    margin-top: 10px;
+}
+.pr1text{
+    border-right: solid #1746A2;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+.pr2text{
+    border-left: solid #1746A2;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-right: 3px;
+    padding-left: 5px;
+}
+.pr3text{
+    border-right: solid #1746A2;
+    border-bottom: solid #1746A2;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+.btn{
+    background-color: #1746A2;
+    border-radius: 10px;
+    min-width: 75px;
+    max-width: fit-content;
+    height: 50px;
+    color: #FFF7E9;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+.btn:hover{
+    background-color:#5F9DF7;
+}
+table{
+    border-style: solid;
+    border-color:#5F9DF7;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin: 10px;
+}
+td,th{
+    border-style: solid;
+    border-color:#5F9DF7;
+    padding: 5px;
+}
+.carrusel{
+    background-color: rgb(95, 157, 247,0.3);
+    border-radius: 20px;
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    padding: 10px;
+}
+.img-car{
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+}
+@media screen and (min-width: 768px) {
+    .welcome{
+        flex-direction: row;
+        align-items: center;
+        column-gap: 10px;
+        height: fit-content;
+    }
+    .img-profile{
+        max-height: inherit;
+        width: auto;
+    }
+    .imagen-container{
+        max-height: 600px;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .texto{
+        max-width: calc(100vw/2);
+    }
+    .texto>p{
+        font-size: 30px;
+    }
+    .about{
+        max-width: calc(100vw*0.6);
+    }
+    .about>p{
+        font-size: 25px;
+    }
+    .intro-text{
+        max-width: calc(100vw*.45);
+        align-self: flex-start;
+    }
+    .intro-text>p{
+        font-size: 25px;
+    }
+    .pr1text>p,.pr2text>p,.pr3text>p{
+        font-size: 25px;
+    }
+    .proy{
+        flex-direction: row;
+        align-items: center;
+    }
+    .pr1text,.pr2text,.pr3text{
+        max-width: calc(100vw*.45);
+    }
+    .carrusel{
+        width: calc(100vw*.45);
+    }
+}
